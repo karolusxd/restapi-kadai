@@ -9,15 +9,18 @@
 エンドポイント・機能
 
 `necomember`にてニックネーム（`membernickname`）、本名（`memberrealname`）、趣味（`memberhobby`）で構成されています。
+
+`import requests`を行ってください。
+
 - GET - `requests.get('http://127.0.0.1:5000/necomember/' + membernickname)`
-- POST - `responce = requests.post('http://127.0.0.1:5000/necomember/' + membernickname, {"realname": memberrealname, "hobby": memberhobby})`
-- PUT - `responce = requests.put('http://127.0.0.1:5000/necomember/' + membernickname, {"realname": memberrealname, "hobby": memberhobby})`
+- POST - `requests.post('http://127.0.0.1:5000/necomember/' + membernickname, {"realname": memberrealname, "hobby": memberhobby})`
+- PUT - `requests.put('http://127.0.0.1:5000/necomember/' + membernickname, {"realname": memberrealname, "hobby": memberhobby})`
 - DELETE - `requests.delete('http://127.0.0.1:5000/necomember/' + membernickname)`
 
 
 ニックネーム（`membernickname`）で参照する感じになります。
 
-表示したい場合は`responce.json()`で`print`してください（`print(responce.json())`）
+表示したい場合は`.json()`で`print`してください。
 
 使用例は`test.py`を実行して、中身をみてもらえるとより伝わりやすいかと思います。
 
