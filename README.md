@@ -1,6 +1,6 @@
 # NECO新人課題（REST-API編）
 
-我が友の「もりくらげ」くんがNode.jsでやってしまっていたので、Python＋Flaskでやろうと思いました。
+morijellyfishがNode.jsでやってしまっていたので、Python＋Flaskでやろうと思いました。
 
 1. ターミナルウィンドウを２つ用意しましょう！
 2. 片方で `python3 rest.py`を実行してサーバーを実行！
